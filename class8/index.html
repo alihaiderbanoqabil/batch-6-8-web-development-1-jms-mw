@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 2 of CSS</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+        }
+
+        h1 {
+            background-color: aqua;
+            color: orange !important;
+            color: orange;
+        }
+
+        div#lorem123
+
+        /* span  */
+            {
+            margin: 16px;
+            margin: 16px 32px 48px 72px;
+            margin: 16px 32px;
+            margin: 16px 32px 50px;
+            margin-top: 16px;
+            margin-right: 32px;
+            margin-bottom: 48px;
+            margin-left: 72px;
+            margin-top: 100px;
+            border: 10px dashed red;
+            /* border-width: 50px; */
+            /* border-style: double; */
+            border-color: orange;
+            /* 
+            padding: 16px;
+            padding: 16px 32px 48px 72px; */
+
+            border-bottom: 2px double green;
+            /* font-size: 50px;
+            font-weight: 900;
+            font-style: italic;
+            font-variant: small-caps; */
+            font-family: Arial, Helvetica, sans-serif;
+            /* line-height:10; */
+            text-align: center;
+            text-align: justify;
+            display: block;
+            display: inline-block;
+            text-decoration: line-through;
+            text-decoration: underline;
+            text-transform: capitalize;
+            text-transform: uppercase;
+            text-shadow: -20px -30px 4 red;
+
+        }
+
+        #box {
+            border: 2px solid red;
+            box-shadow: 20px -30px 5px 10px gray;
+        }
+
+        input {
+            accent-color: red;
+        }
+
+        /* div,
+        article,
+        section {} */
+        .same {
+            background-color: greenyellow;
+            border: 2px solid red;
+            margin: 16px;
+            padding: 16px;
+            border-radius: 20px;
+        }
+
+        .circle {
+            background-color: cyan;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        header {
+            position: fixed;
+            /* background-image: url("https://pbs.twimg.com/profile_images/1605297940242669568/q8-vPggS_400x400.jpg"); */
+            /* height: 100vh; */
+            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            /* background-position: center;
+            background-position: center center;
+            background-position: bottom center;
+            background-position: left center;
+            background-position: left top;
+            background-position: 30% 20%;
+            background-position: 40px 20px; */
+            background-size: contain;
+            background-size: cover;
+            background-origin: content-box;
+            background-attachment: scroll;
+            background-attachment: fixed;
+            background-color: orange;
+            /* width: 100%; */
+            bottom: 20%;
+            right: 10%;
+        }
+
+        section {
+            width: 50%;
+            font-size: 20px;
+            background-color: green;
+        }
+
+        section article {
+            width: 10%;
+            width: 70vw;
+            font-size: 2rem;
+            font-size: 20px;
+            font-size: 2em;
+            background-color: rgb(197, 221, 15);
+        }
+
+        address {
+            background-color: aquamarine;
+            padding: 0 20px;
+            border: 10px solid red;
+            width: 100%;
+            box-sizing: border-box;
+            /* margin: 0 30px; */
+            position: static;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="lorem123">Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Delectus soluta nihil mollitia ab repudiandae quasi.
+        Neque repellendus laboriosam excepturi dignissimos, quam consectetur, quisquam alias quibusdam, aut placeat nisi
+        iure reprehenderit.
+    </div>
+    <span>Lorem ipsum, dolor sit amet
+        <!-- dolor sit amet consectetur adipisicing elit. Delectus soluta nihil mollitia ab repudiandae quasi.
+        Neque repellendus laboriosam excepturi dignissimos, quam consectetur, quisquam alias quibusdam, aut placeat nisi
+        iure reprehenderit. -->
+    </span>
+
+    <div id="box">this is div</div>
+    <!-- <h1 style="background-color: aqua; color: red;">Hello world</h1>
+    <h1 style="background-color: aqua; color: red;">Hello world</h1>
+    <h1 style="background-color: aqua; color: red;">Hello world</h1>
+    <h1 style="background-color: aqua; color: red;">Hello world</h1>
+    <h1 style="background-color: aqua; color: red;">Hello world</h1>
+    <h1 style="background-color: aqua; color: red;">Hello world</h1>
+    <h1 style="background-color: aqua; color: red;">Hello world</h1>
+    <h1 style="background-color: aqua; color: red;">Hello world</h1>
+    <h1 style="background-color: aqua; color: red;">Hello world</h1> -->
+    <h1>Hello world</h1>
+    <h1>Hello world</h1>
+    <h1>Hello world</h1>
+    <h1>Hello world</h1>
+    <h1>Hello world</h1>
+    <h1>Hello world</h1>
+    <h1>Hello world</h1>
+    Male<input type="checkbox">
+    Male<input type="radio">
+
+    <!-- <div class="same">1</div>
+    <div class="same">2</div>
+    <div class="same">3</div>
+    <section class="same">3</section>
+    <artcile class="same">3</artcile> -->
+
+    <article>kjhkjh</article>
+
+    <div class="circle">12</div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <section>this is section
+        <!-- <div> -->
+        <article>this is article</article>
+        <!-- </div> -->
+    </section>
+
+    <address>This is address</address>
+</body>
+
+</html>
