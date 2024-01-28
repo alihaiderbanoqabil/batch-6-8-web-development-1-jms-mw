@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 of CSS and class 1 JS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto 93vh auto;
+        }
+
+        header {
+            background-color: rgb(255, 64, 0);
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        aside {
+            background-color: rgb(212, 0, 255);
+        }
+
+        main {
+            background-color: rgb(255, 234, 0);
+            grid-column-start: 2;
+            grid-column-end: 5;
+
+            img {
+                width: 100%;
+            }
+
+            ul {
+                list-style: none;
+            }
+        }
+
+
+        /* main ul {
+            list-style: none;
+        } */
+
+        /* main img {
+             width: 100%;
+        } */
+
+        footer {
+            background-color: rgb(185, 194, 64);
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    </style>
+    <!-- <script>
+        console.log("Hello World");
+    </script>
+    <script src="./script.js"></script> -->
+</head>
+
+<body>
+    <header>header</header>
+    <aside>Sidebar</aside>
+    <main>
+        <img src="https://s.adroll.com/a/TQ2/D3I/TQ2D3IYK6VAXBEUV66GLYT.png" alt="">
+        <article>
+            <h1>hello this is my first article on HTML and CSS</h1>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nesciunt, praesentium voluptatem inventore
+                sapiente laboriosam, nostrum quisquam dolores tempora totam accusamus nemo expedita cumque eius
+                recusandae sed, temporibus beatae? Consequuntur?</p>
+            <ul>
+                <li>Apple</li>
+                <li>Mango</li>
+            </ul>
+        </article>
+    </main>
+    <footer>Footer</footer>
+    <!-- <script>
+        console.log("Hello World");
+    </script> -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
