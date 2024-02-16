@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 7 of JS</title>
+  </head>
+  <body>
+    <script>
+      //   const studentInfo = {
+      //     firstName: "ali",
+      //     lastName: "haider",
+      //     age: 25,
+      //     greet: function () {
+      //       console.log("hello", this);
+      //     },
+      //     //   greet: () => {
+      //     //     console.log("hello", this);
+      //     //   },
+      //     //   greet() {
+      //     //     console.log("hello", this);
+      //     //   },
+      //     fullName() {
+      //       return `${this.firstName} ${this.lastName}`;
+      //     },
+      //   };
+
+      //   //   const copiedObject = studentInfo;
+      //   //   Object.freeze(studentInfo);
+      //   //   Object.seal(studentInfo);
+      //   studentInfo.age = 45;
+      //   studentInfo.abc = "45";
+
+      //   delete studentInfo.lastName;
+      //   //   console.log(studentInfo, Object.isFrozen(studentInfo));
+      //   console.log(studentInfo, Object.isSealed(studentInfo));
+
+      //   const person = {
+      //     isHuman: false,
+      //     printIntroduction: function () {
+      //       console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+      //     },
+      //   };
+
+      //   const me = Object.create(person);
+
+      //   me.name = "Matthew"; // "name" is a property set on "me", but not on "person"
+      //   me.isHuman = true; // Inherited properties can be overwritten
+
+      //   //   me.printIntroduction();
+
+      //   console.log(me);
+
+      //   array methods in JS
+
+      const cars = ["Saab", "Volvo", "BMW"];
+      const cars1 = ["Saab1", "Volvo1", "BMW1"];
+      const cars2 = ["Saab2", "Volvo2", "BMW2"];
+      const cars3 = ["Saab3", "Volvo3", "BMW3"];
+      const cars4 = ["Saab4", "Volvo4", "BMW4"];
+      //   const cars5 = ["Saab5", "Volvo1", "BMW1"];
+
+      //   console.log(cars[0], cars[cars.length - 1]);
+      //   console.log(cars.at(1), cars.at(-2));
+
+      //   const combinedCars = cars1.concat(cars2, cars3, cars4, [1, 5, 7, 32, 42]);
+      //   console.log(combinedCars);
+
+      //   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      //   const f = fruits.entries();
+      //   console.log(f);
+      //   for (let fruit of f) {
+      //     console.log(fruit, fruit[0], fruit[1]);
+      //   }
+
+      //   const ages = [32, 33, 16, 40];
+
+      //   function checkAge(item, index, array) {
+      //     console.log(item, index, array);
+      //     return item > 18;
+      //   }
+      //   const checkAge = (item, index, array) => {
+      //     console.log(item, index, array);
+      //     return item > 18;
+      //   };
+
+      //   const every = ages.every(checkAge);
+      //   console.log(every);
+      //   const every = ages.every(function (item, index, array) {
+      //     console.log(item, index, array);
+      //     return item > 18;
+      //   });
+      //   const every = ages.every((item, index, array) => {
+      //     console.log(item, index, array);
+      //     return item > 18;
+      //   });
+      //   console.log(every);
+      //   const some = ages.some((item, index, array) => {
+      //     console.log(item, index, array);
+      //     return item > 18;
+      //   });
+      //   console.log(some);
+      //   console.log(checkAge);
+      //   console.log(checkAge());
+
+      const ages = [32, 33, 16, 40];
+      const students = [
+        { name: "ali", age: 25, id: 1 },
+        { name: "haider", age: 12, id: 3 },
+        { name: "haider", age: 34, id: 2 },
+      ];
+
+      //   const result = ages.filter(checkAdult);
+
+      //   function checkAdult(item) {
+      //     return item >= 38;
+      //   }
+
+      //   console.log(result);
+      //   const result = students.filter(checkAdult);
+      //   const result = students.find(checkAdult);
+
+      //   function checkAdult(item) {
+      //     console.log(item, item.age);
+      //     return item.age >= 25;
+      //   }
+
+      //   //   function checkAdult(item) {
+      //   //     console.log(item, item.name);
+      //   //     return item.name === "haider";
+      //   //   }
+
+      //   console.log(result);
+
+      //   const numbers = [65, 44, 12, 4];
+      //   const strings = ["ali", "haider"];
+      //   //   const newArr = numbers.map(myFunction);
+      //   const newArr = strings.map(myFunction);
+
+      //   function myFunction(string) {
+      //     return string.toUpperCase();
+      //   }
+
+      //   console.log(numbers);
+      //   console.log(strings);
+      //   console.log(newArr);
+
+      const numbers = [65, 44, 12, 4];
+      //   numbers.push(45);
+      //   numbers.push(450);
+      //   numbers.push(68, 90, 13);
+      //   numbers.push(40);
+      //   //   numbers.push("ali");
+      //   numbers.pop();
+      //   numbers.pop();
+      //   numbers.pop();
+      //   console.log(numbers);
+
+      numbers.shift();
+      numbers.shift();
+      numbers.shift();
+      numbers.unshift("ali");
+      numbers.unshift(true);
+      numbers.unshift({ name: "ali" });
+      console.log(numbers);
+    </script>
+  </body>
+</html>
