@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 8 of JS</title>
+  </head>
+  <body>
+    <script>
+      //   console.log("class 8 of JS");
+
+      //   const ages = [32, 33, 16, 40];
+      const students = [
+        { name: "ali", age: 25, id: 1 },
+        { name: "haider", age: 12, id: 3 },
+        { name: "haider", age: 34, id: 2 },
+      ];
+
+      //   const result = students.filter(checkAdult);
+      //   // const result = students.find(checkAdult);
+
+      //   function checkAdult(item) {
+      //     console.log(item, item.age);
+      //     // return item.age >= 25 || item.name === "haider";
+      //     // return true;
+
+      //     if (item.age >= 25 && item.name === "haider") {
+      //       return true;
+      //     } else {
+      //       return false;
+      //     }
+      //   }
+
+      //   function checkAdult(item) {
+      //     console.log(item, item.name);
+      //     return item.name === "haider";
+      //   }
+
+      //   console.log(result);
+
+      const numbers = [65, 44, 12, 4];
+      //   const newArr = numbers.map(myFunction);
+
+      //   function myFunction(num) {
+      //     return num * num;
+      //   }
+
+      //   console.log(numbers);
+      //   console.log(newArr);
+      //   const result = students.forEach((item, index, array) => {
+      //     item.name = "hasnain";
+      //     item.a = "hasnain";
+      //     return item;
+      //   });
+      //   console.log(students);
+      //   console.log(result);
+      //   let sum = 0;
+      //   for (let index = 0; index < numbers.length; index++) {
+      //     const element = numbers[index];
+      //     console.log(sum, element);
+      //     sum = sum + element;
+      //   }
+
+      //   let sum = 0;
+
+      //   for (const number of numbers) {
+      //     sum = sum + number;
+      //   }
+
+      //   console.log(sum);
+
+      //   const sum = numbers.reduce(
+      //     (previousValue, currentValue, curentIndex, array) => {
+      //       console.log(previousValue, currentValue, curentIndex, array);
+      //       return previousValue + currentValue;
+      //     },
+      //     0
+      //   );
+      //   const sum = numbers.reduce(
+      //     (prevVal, currentVal) => prevVal + currentVal,
+      //     0
+      //   );
+      //   console.log(sum);
+      const cars = [
+        {
+          make: "audi",
+          model: "r8",
+          year: "2012",
+        },
+        {
+          make: "audi",
+          model: "rs5",
+          year: "2013",
+        },
+        {
+          make: "ford",
+          model: "mustang",
+          year: "2012",
+        },
+        {
+          make: "ford",
+          model: "fusion",
+          year: "2015",
+        },
+        {
+          make: "kia",
+          model: "optima",
+          year: "2012",
+        },
+      ];
+
+      //   result = cars.reduce(function (r, a) {
+      //     r[a.year] = r[a.year] || [];
+      //     r[a.year].push(a);
+      //     return r;
+      //   }, {});
+
+      //   console.log(result);
+
+      //   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      //   fruits.fill("Kiwi");
+
+      //   console.log(fruits);
+
+      //   const myArr = [
+      //     [1, 2],
+      //     [3, 4],
+      //     [5, 6],
+      //   ];
+
+      //   const newArr = myArr.flat();
+
+      //   console.log(myArr);
+      //   console.log(newArr);
+      // const myArr = [
+      //   [1, 2],
+      //   [3, 4],
+      //   [5, 6, [4, 5, [8, 9]]],
+      // ];
+      // const newArr = myArr.flat(Infinity).map((x) => x * 2);
+
+      // console.log(newArr);
+
+      const string = "Banana,Orange,Apple,Mango";
+      const array = string.split(",");
+      console.log(array.join(" "));
+
+      localStorage.setItem("name", "ali haider");
+      localStorage.setItem("age", 67);
+      localStorage.setItem("isMale", true);
+      localStorage.setItem("cars", cars);
+      localStorage.setItem("stringCars", JSON.stringify(cars));
+    </script>
+  </body>
+</html>
